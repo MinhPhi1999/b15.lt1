@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ngoiSao = [
+        'Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'
+    ];
+    let chomSao = [
+        'Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'
+    ];
+
+    // function myFunction() {
+    //     let a= prompt("nhập tên ngôi sao")
+    //     for (let i = 0; i < ngoiSao.length; i++) {
+    //     if (a===ngoiSao[i]){
+    //         document.write(chomSao[i]);
+    //         break;
+    //     }
+    //     else {
+    //         document.write('không có')
+    //     }
+    //     }
+    // }
+    // myFunction();
+
+    let chomsaoCanTim= prompt('nhập tên ngôi sao ');
+    let viTri = ngoiSao.indexOf(chomsaoCanTim);
+    if (viTri===-1){
+        alert('không có');
+    }else {
+        alert(chomSao[viTri]);
+    }
+</script>
+</body>
+</html>
